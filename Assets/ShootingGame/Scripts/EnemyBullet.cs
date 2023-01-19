@@ -7,7 +7,7 @@ using UnityEngine;
 public class EnemyBullet : MonoBehaviour
 {
     private const string playerGOName = "Player";
-    private const float SPEED = 5.0f;
+    private const float SPEED = 10.0f;
     private GameObject player;
     private float timer = 0f;
     private float lifeTime = 300.0f;
@@ -31,7 +31,7 @@ public class EnemyBullet : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        GetComponent<Rigidbody>().velocity = Vector3.up * SPEED;
+        GetComponent<Rigidbody>().velocity = transform.right * SPEED;
     }
 
     // Update is called once per frame

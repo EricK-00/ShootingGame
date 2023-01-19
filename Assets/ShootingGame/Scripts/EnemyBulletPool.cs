@@ -37,6 +37,8 @@ public class EnemyBulletPool : MonoBehaviour
                 GameObject bullet = Instantiate(bulletPrefab, gameObject.transform);
                 bullet.transform.position = pos;
                 poolList.Add(bullet);
+
+                return;
             }
             else
             {
